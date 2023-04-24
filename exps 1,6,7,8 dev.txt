@@ -1,0 +1,69 @@
+exp 1:
+mkdir some name
+go in that file in c drive create 3 text douments save as .html
+go to cmd or git bash
+type code
+cd some name
+git init
+git add name of files 1.html 2.html 3.html
+git commit -m "drogon"    (any name)
+git remote add origin https://...  ( create a repository in github and copy its link here)
+git branch -r
+(kuch nhi aana chahiye)
+git checkout -b main
+git push -u origin main
+
+(pull)
+git --version
+cd some name
+mkdir pull
+cd pull
+git clone https.... same link as above
+
+
+exp 6
+pip install selenium
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+import time
+driver= webdriver.Chrome()
+driver.get("https://www.google.com//")
+
+opens chrome with the link show
+
+
+
+exp 7
+crate a destop file with name PHP
+open php in vs code and create 2 files a dockerfile and index.php
+in docker file
+FROM php
+COPY ./index.php ./
+EXPOSE 3000
+CMD ["php", "-S", "0.0.0.0:3000"]
+in php file
+<html>
+    <?php echo "Hello world from a PHP container"?>
+</html>
+
+now open terminal
+docker build . -trajk2611/php
+docker run --name=php -p=3000:3000 rajk2611/php
+
+then open docker destop and a file will be created there click on 3000:3000 and show
+
+
+
+exp 8
+cmd
+docker login
+docker run -it -d Ubuntu
+docker pull Ubuntu docker images
+docker tag (any image id from above) rajk2611/Ubuntu
+docker images
+docker push rajk2611/Ubuntu:latest
+docker ps
+docker stop (container id from above) copy
+
+
